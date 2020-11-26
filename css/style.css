@@ -9,7 +9,7 @@
     height: 100vh;
     width: 100vw;
     grid-template-columns:repeat(5, 1fr);
-    grid-template-rows:repeat(6, 1fr);
+    grid-template-rows:(6, 1fr);
     grid-gap: 10px;
     margin: auto;
     grid-template-areas: 
@@ -75,6 +75,25 @@
     background: transparent;
     box-shadow: none;
 }
+/* animation */
+
+.nav {
+    background: white;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    clip-path: circle(0px at 90% -10%);
+    -webkit-clip-path: circle(0px at 90% -10%);
+    transition: all 1s ease-in;
+}
+
+.nav.open {
+    clip-path: circle(px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+
+}
+
  
 .menu-btn.open .menu-btn_burger::before {
     transform: rotate(45deg) translate(35px, -35px);
@@ -82,21 +101,6 @@
 
 .menu-btn.open .menu-btn_burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
-}
-
-.nav {
-    background: white;
-    height: 100;
-    width: 100vh;
-    clip-path: circle(0px at 90% -10%);
-    -webkit-clip-path: circle(0px at 90% -10%);
-    transition: all 1s ease-out;
-}
-
-.nav.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-
 }
 
 
