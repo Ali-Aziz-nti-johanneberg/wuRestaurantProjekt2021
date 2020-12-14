@@ -207,11 +207,121 @@
 
 .section {
     grid-area: se;
-    background-color: gray;
     background-image: url(http://floorinc.com.my/wp-content/themes/floorinc/images/bg-index-concept.png);
     opacity: 1;
-    transform: translateZ(0)
+    overflow: hidden;
 }
+
+.text {
+    width: 70%;
+    margin: 40px auto 40px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.text h1 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.text h1::before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: crimson;
+    width: 100px;
+    height: 3px;
+}
+
+
+
+.outside {
+    width: 100%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+    grid-gap: 0 15px;
+}
+            
+.wrapper{
+    border: 2px solid lightgray;
+    position: relative;
+    bottom: -30px;
+    cursor: pointer;
+    
+}
+
+.wrapper .innerwrapper{
+    position: absolute;
+    width: 100%;
+    text-align:center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.innerwrapper img{
+    background-image: url(http://floorinc.com.my/wp-content/themes/floorinc/images/bg-index-concept.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 50px;
+    margin-top: 65px;
+    
+}
+
+.wrapper:hover .innerwrapper img{
+    background-image: url(http://floorinc.com.my/wp-content/themes/floorinc/images/bg-index-concept.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 50px;
+    margin-top: 65px;
+    
+}
+
+
+
+
+.innerwrapper h3{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.outside p{
+    text-align: center;
+    word-break: break-all;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align-last: center;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+.wrapper:hover{
+    border-color: crimson;
+}
+
+.wrapper:hover .innerwrapper {
+    margin-top: -130px;
+    color: crimson;
+    
+}
+
+.wrapper:hover p{
+    opacity: 1;
+    margin-top: 0;
+    transition: .4s;
+}
+
 
 .footer {
     grid-area: fo;
