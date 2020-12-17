@@ -372,10 +372,9 @@ a {
     width: 100vw;
     height: 200vh;
     grid-template-columns:repeat(5,20%);
-    grid-template-rows:8% 22% 20% 20% 20% 10%;      
+    grid-template-rows:8% 27% 28% 27% 10%;      
     grid-template-areas: 
     'he he he he he'
-    'm1 m1 m1 m1 m1'
     'm1 m1 m1 m1 m1'
     'm1 m1 m1 m1 m1'
     'm1 m1 m1 m1 m1'
@@ -386,9 +385,28 @@ a {
 .mainer2 {
     grid-area: m1;
     background:radial-gradient(#fff,#ffd6d6);   
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: grid;
+    overflow:hidden;
+    gap: 10vmax;
+}
 
+.col-3 img{
+    max-width: 20vw;
+
+}
+
+.col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.pizza-title {
+    text-align: center;
+    line-height: 24px;
 }
 
 /*
