@@ -2,8 +2,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    
 }
+
+body{
+    overflow-x: hidden;
+}
+
+
 #container {
     display: grid;
     width: 100vw;
@@ -11,8 +18,7 @@
     grid-template-columns:repeat(5,20%);
     background-image: url("../img/Artboard\ 1\ \(1\).png");
     background-size:cover ;
-    grid-template-rows:8% 22% 20% 20% 20% 10%;   
-    /*margin: auto;*/
+    grid-template-rows:8% 22% 20% 20% 20% 10%;      
     grid-template-areas: 
     'he he he he he'
     'ma ma ma ma ma'
@@ -33,18 +39,14 @@
 
 .header a{
     text-decoration: none;
-    opacity: 100;
-    margin-right: 10px;
-    color: crimson;
+    color: #262626;
     font-size: 50px;
     font-weight: bold;
-    position: absolute;
-    margin-right: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header a:hover {
     color: yellow;
-    opacity: 100;
 }
 
 
@@ -57,7 +59,7 @@
     height: 80px;
     cursor: pointer;
     transition:all .5s ease-in-out;
-    z-index: 5;
+    z-index: 1;
     position: absolute;
 }
 
@@ -99,20 +101,19 @@
 
 
 .nav {
-
     background-color: rgba(201, 28, 28, 0.562);
     height: 100%;
     width: 100%;
     display:flex;
-    justify-content: flex-start;
     clip-path: circle(0px at 90% -10%);
-    -webkit-clip-path: circle(0px at 90% -10%);
     transition: all 1s ease-in;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .nav.open {
-    clip-path: circle(px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1200px at 90% -10%);
+
 
 }
 
@@ -127,7 +128,7 @@
 
 
 
-.main {
+.mainer {
     grid-area: ma;
     display: flex;
     justify-content: center;
@@ -136,7 +137,7 @@
 
 }
 
-.main h1 {
+.mainer h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100px;
     font-size: 50px;
@@ -148,7 +149,6 @@
     position: absolute;
     width: 150px;
     height: 75px;
-    border: none;
     padding: 10 px;
     margin: 20px;
     color: white;
@@ -291,8 +291,6 @@
 }
 
 
-
-
 .innerwrapper h3{
     margin-top: 50px;
     font-size: 20px;
@@ -302,7 +300,7 @@
 a {
     text-decoration: yellow;
     color: black;
-}
+}   
 
 .outside p{
     text-align: center;
@@ -365,3 +363,53 @@ a {
 .get_in_touch p{
     margin-top: 35px;
 }
+
+
+/* --------- Meny ------------- */ 
+
+#container2 {
+    display: grid;
+    width: 100vw;
+    height: 200vh;
+    grid-template-columns:repeat(5,20%);
+    grid-template-rows:8% 22% 20% 20% 20% 10%;      
+    grid-template-areas: 
+    'he he he he he'
+    'm1 m1 m1 m1 m1'
+    'm1 m1 m1 m1 m1'
+    'm1 m1 m1 m1 m1'
+    'm1 m1 m1 m1 m1'
+    'fo fo fo fo fo'   
+    ;
+}
+
+.mainer2 {
+    grid-area: m1;
+    background:radial-gradient(#fff,#ffd6d6);   
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*
+.col-3{
+    flex: none;
+    min-width: 250px;
+    margin-bottom: 30px;    ;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+
+.small-container{
+    display: flex;
+    flex: none;
+    max-width: 1080px;
+    max-height: ;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;    
+}
+/*
