@@ -293,6 +293,12 @@
     font-size: 20px;
 }
 
+
+a {
+    text-decoration: yellow;
+    color: black;
+}
+
 .outside p{
     text-align: center;
     word-break: break-all;
@@ -310,12 +316,17 @@
     border-color: crimson;
 }
 
+.wrapper:hover .innerwrapper a {
+    color: crimson;
+    
+}
+
+
 .wrapper:hover .innerwrapper {
     margin-top: -130px;
     color: crimson;
     
 }
-
 .wrapper:hover p{
     opacity: 1;
     margin-top: 0;
