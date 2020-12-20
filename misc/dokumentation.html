@@ -23,7 +23,7 @@
 
     <h2>1. Idébeskrivning</h2>
     <!-- Vad ska du göra? Vilken är din målgrupp? Om du utvecklar en tidigare sida; Vad ska du förändra/utveckla? -->
-    <p>En hemsida för en pizzera och den ska vara riktat mot familjer.</p>
+    <p>En hemsida för en pizzera och den ska vara riktat mot familjer som tycker om nya smak.</p>
     <h2>2. Planering</h2>
     <p>Först photoshopa bilderna, därefter börja med grid, lägga bilderna, därefter på börja med flex, efter färdigt med alla 3 hemsidor börja jag implentera menu knappen kanske med javascript, se till att alla mappar och dokument har passade namn. </p>
 
@@ -60,31 +60,33 @@
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 5? -->
-            Jag fixa till storleken på websidan genom att ändra på väderna i grid-template-rows från fracture till procen, på grund av att fracture hanterar store bilder dåligt. 
+            Jag fixa till storleken på websidan genom att ändra på väderna i grid-template-rows från fracture till procent, på grund av att fracture hanterar store bilder dåligt. 
             Märkte även av att bilden var inte all anpassad även med background-size:cover;. Ytterliigare har jag fixat till att header ser mer proffs ut genom att lägga backgrounds bild till main och göra header opacity 50%, men jag insåg att background-color fungera dåligt med text och det jag gjorde istället är att
            så att jag abävnde mig av backgrund background:rgba(0, 0, 0, 0.5); som opacity redan implemnterat i  syntaxen.
-        
         </td>
         </tr>
 
         <tr>          
             <td>6</td>
             <td>
-            <!-- Vad görs på lektionen vecka 6? -->Under lketionen så jobbade jag med till att fixa till estetiska aspekten av min sida. Jag satte min fucos på att lägga en animation, vilket gör när du hover på elementen så kommer en animation att utspela sig. 
+            <!-- Vad görs på lektionen vecka 6? -->Under lektionen så jobbade jag med att fixa estetiska aspekten av min sida. Jag satte min fucos på att lägga en animation, vilket gör när du hover på elementen så kommer en animation att utspela sig. 
                 Dessutom försökte jag använde mig av contrast checker för att se till att färgerna passar ihop bra.
         
             </td>
             <td>
               
               
-              Jag skapde och fixade till flera saker. Jag började med att skapa en box content där about us, menu, och location. Som det hörs det är inom en box, och tanken är att när jag hoverer min mus över så ska det bli röda omrking. Under tiden som jag skapde dessa boxar stöttede jag på några problem. En av dessa var färdig contrasen, texten (p) inom boxen skulle bli röd men det blev för svårt att läsa så att jag byta det till svart. Dessutom så ska bilden åka upp, problemet den såg inte alls som jag ville ha så att jag skapade en liten box omrking bilden med samma background. Vilket gjorde att de såg mer naturligt ut. Till sist fixade jag till footer. Inget speiclet, tog en färg i contrast checker och såg till att färgen passade bra men varan (background och text), därefter skapade jag två boxex för var sin del, en för random info och den andra för mail. Inga problem stötte jag på.
-                Jag insög att hambruger menu när den trycks så "pushar" ut alla element inne i sentemiskaelement header. Lösning som jag kom på var att först göra själva hamburger till position:absolute för att hanbruger menu ska inte rör på sig.
+              Jag skapde och fixade till flera saker. Jag började med att skapa en box content där about us, menu, och location. Som det hörs det är inom en box, och tanken är att när jag hoverer min mus över så ska det bli röda omrking. Under tiden som jag skapde dessa boxar stöttede jag på några problem. En av dessa var färdig contrasen, texten (p) inom boxen skulle bli röd men det blev för svårt att läsa så att jag byta det till svart. Dessutom så ska bilden åka upp, problemet var att den såg inte alls som jag ville ha så att jag skapade en liten box omrking bilden med samma background som föräldrar. Detta i sin tur ledde till att sidan såg mer naturligt ut. Till sist fixade jag till footer. Inget speiclet, tog en färg i contrast checker och såg till att färgen passade bra men varan (background och text), därefter skapade jag två boxex för var sin del, en för random info och den andra för mail.
+                Jag insåg att hambruger menu när den trycks så "pushar" ut alla element inne i sentemiska-element header. Lösning som jag kom på var att först göra själva hamburger till position:absolute för att hanbruger menu ska inte rör på sig.
                 Det som jag insåg senare att jag behöver inte ha något i själva header. Jag kan lägga dem i nav. Logon som jag kommer lägga senare kommer att vara position absolute längs åt höger så att menu layouten rör/trycker bort den.w
               <!-- Vad görs utanför lektionen vecka 6? -->
               <p>jag på började med min menu html, det första jag gjorde var att koperia min grid, sätta alla sematic element till sina grid delar, ser till att allt passar ihop. kopierade header,nav och footer från index.html
                   Därefter Börjdae jag fixa till bilderna som jag behövde. Första problemet var att bilderna för stora, det jag gjorde är att sätta en max-with. Sen insåg jag att jag vill ha texter under bilderna, jag var tvungen att sätta in bilderna i en yttre div och inre div för texterna. Då insåg jag att bilderna var inte indelade hur jag ville. Då testa jag att använda flex box vilket gick inte hur jag tänkte, sen insåg jag att jag kan använda grid för det. 
                   Nästa problem dök upp när jag skulle lägga gap mellan div-elemten, då insåg jag att det gick inte eftersom div-elemten var antigen i varandra eller långt från varandra. Försökte fixa det med margin. Det gick inte. Sen insåg jag att problem från början kommer från faktum att bilderna var förstöra. Lösning var att implmentera både en max height och width. Problemet med att dem gick i varandra försvan. Däremot så blev gap mellan div-elemten drastiskt värre. Jag löste det genom att implentera en flex box i div-elemeten.
                   Div-elemten har attributet inline vilket gjorde att bilderna stack ut från "boxen". För att fixa det, använde jag mig av flex-driection:colums;.
+
+                  För sista delen av projektet (about-us), tänkte jag på börjad det normala,(att lägga till header och footer som är redan gjorde från idnex.html). Första problemet var att hyperlinken/image passade inte in i border som jag hade lagt. Först experimenterade jag med objekt-fit, inte fungerade. Därefter testade jag with 100% vilekt gjorde jobbet. 
+                  Andra problemet dök när jag försökte använda link till en id. Problemet var att det kom alltid till bilden istället för texten. Lösningen var simple. Jag behövde bara skapa en id inom div-elementen. 
               </p>
             </td>
         </tr>

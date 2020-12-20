@@ -49,6 +49,15 @@ body{
     color: yellow;
 }
 
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logo a >img{
+    width:100% ;
+}
+
 
 .menu-btn {
     position: relative;
@@ -212,7 +221,7 @@ body{
 
 .section {
     grid-area: se;
-    background-image: url(http://floorinc.com.my/wp-content/themes/floorinc/images/bg-index-concept.png);
+    background-color: white;
     opacity: 1;
     overflow: hidden;
 }
@@ -269,7 +278,7 @@ body{
 }
 
 .innerwrapper img{
-    background-image: url(http://floorinc.com.my/wp-content/themes/floorinc/images/bg-index-concept.png);
+    background-color: white;
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -280,7 +289,8 @@ body{
 }
 
 .wrapper:hover .innerwrapper img{
-    background-image: url(http://floorinc.com.my/wp-content/themes/floorinc/images/bg-index-concept.png);
+    border-radius: 25px;
+    background-color: white;
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -385,8 +395,6 @@ a {
 .mainer2 {
     grid-area: m1;
     background:radial-gradient(#fff,#ffd6d6);   
-
-    display: grid;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -421,33 +429,92 @@ a {
     line-height: 24px;
 }
 
-/*
+/*------ About us --------*/
 
-Extra, som inte längre används.
-(Text) kanske kommer används senare.q 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-.col-3{
-    flex: none;
-    min-width: 250px;
-    margin-bottom: 30px;    ;
+#container3 {
+    display: grid;
+    width: 100vw;
+    height: 200vh;
+    grid-template-columns:repeat(5,20%);
+    grid-template-rows:8% 27% 28% 27% 10%;      
+    grid-template-areas: 
+    'he he he he he'
+    'm3 m3 m3 m3 m3'
+    'm3 m3 m3 m3 m3'
+    'm3 m3 m3 m3 m3'
+    'fo fo fo fo fo'   
+    ;
 }
 
-.col-3 img{
-    width: 100%;
+.mainer3{
+    grid-area: m3;
+    font-family: 'Roboto','sans-serif';
+    overflow: hidden;
+    text-align: center;
+    background-color: #ff4f58ff;
+    padding: 60px;
 }
 
+.mainer3 h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color:white;
+    font-size: 30px;
+}
 
-.small-container{
-    display: flex;
-    flex: none;
-    max-width: 1080px;
-    max-height: ;
+.border{
+    display: block;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;    
+    width: 160px;
+    background:#EDFF00FF;
+    height: 3px;
+    margin-bottom: 40px;
+
 }
-/*
+
+.ps{
+    margin-bottom: 40px;
+}
+
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%  ;
+}
+
+.ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.ps a:hover > img{
+    filter: none;
+}
+
+.section-text{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section-text:target{
+    height: auto;
+}
+
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
