@@ -358,13 +358,13 @@ a {
     color: #FCF6F5FF;
 }
 
-.get_in_touch{
+.box-footer-one{
     border: 5px solid #ff4f58ff;
     height: 100px;
     width: 400px;
 }
 
-.legal{
+.box-footer-two{
     border: 5px solid #ff4f58ff;
     height: 100px;
     width: 230px;
